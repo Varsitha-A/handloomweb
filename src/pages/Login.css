@@ -1,0 +1,89 @@
+:root {
+  --nav-height: 70px;
+}
+
+/* Main login section container */
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;  /* 👈 aligns to the bottom */
+  min-height: 100vh;
+  padding-bottom: 80px;   /* 👈 bottom spacing */
+  background-color: #fdfdfd;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Login form box */
+.contact-form-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form title */
+.form-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Input fields */
+.form-input {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #6c63ff;
+}
+
+/* Submit button */
+.form-button {
+  background-color: #6c63ff;
+  color: white;
+  font-size: 1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+  background-color: #554cd1;
+}
+
+/* Links below form */
+.switch-auth {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.switch-auth a {
+  color: #6c63ff;
+  text-decoration: none;
+}
+
+.switch-auth a:hover {
+  text-decoration: underline;
+}
+.body{
+  background-color: aquamarine;
+}

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+:root {
+  --nav-height: 70px;
+  --blur-bg: rgba(255, 255, 255, 0.55);  /* ✨ Reduced blur (was 0.45) */
+  --accent: white;
+  --hover-color: burlywood;
+  --active-bg: burlywood;
+  --active-text: white;
+}
+
+/* ───── Hero Banner ───── */
+/* .hero {
+  background: url('https://via.placeholder.com/1200x400?text=Welcome+to+Handloom+Store') no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 5px rgb(10, 10, 10);
+} */
+
+/* ───── Section Titles ─────
+.section-title {
+  border-bottom: 2px solid olive;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+/* ───── Card Hover ───── */
+.card:hover {
+  box-shadow: 0 0 10px rgba(224, 228, 229, 0.15);
+  transition: 0.3s;
+} */
+
+/* ───── Body Background ───── */
+.body {
+  background-image: url("C:/Users/varsi/handloomsite/handloomsite/src/images/handloom.jpeg");
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(3px);
+}
+
+/* ───── Header container ───── */
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  background: var(--blur-bg);
+  backdrop-filter: blur(6px);                  /* ✨ Reduced blur strength */
+  border-radius: 25px;
+  z-index: 999;
+  padding: 0 40px;
+  font-family: 'Dancing Script', cursive;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);   /* ✨ Soft shadow added */
+  transition: all 0.3s ease;
+}
+
+/* ───── Brand / logo ───── */
+.brand {
+  font-size: 2rem;
+  font-weight: 600;
+  color: brown;
+  user-select: none;
+}
+
+/* ───── Nav links container ───── */
+.nav-links {
+  display: flex;
+  gap: min(6vw, 80px);
+}
+
+/* ───── Nav link styles ───── */
+.nav-item {
+  position: relative;
+  font-size: 1.35rem;
+  color: #045;
+  text-decoration: none;
+  padding: 6px 14px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+/* Hover underline effect */
+.nav-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.25s ease;
+}
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
+.nav-item:hover {
+  background-color: rgba(35, 97, 209, 0.1); /* ✨ Hover background */
+  color: var(--hover-color);
+}
+
+/* Active link style */
+.nav-item.active {
+  border: 3px solid var(--accent);
+  border-radius: 8px;
+  background-color: var(--active-bg);
+  color: var(--active-text);
+  box-shadow: 0 0 10px rgba(35, 97, 209, 0.15);  /* ✨ Glow effect */
+}
+
+/* ───── Card section animations ───── */
+/* .section-box {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.section-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px burlywood;
+}
+
+/* ───── Card image fit ───── */
+/* .section-img {
+  height: 250px;
+  object-fit: cover;
+} */ 
+:root {
+  --nav-height: 70px;
+}
+
+/* Page layout with top offset */
+.page-container {
+  padding-top: var(--nav-height);
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+/* Hero banner box */
+.hero {
+  background: url('https://via.placeholder.com/1200x400?text=Welcome+to+Handloom+Store') no-repeat center center;
+  background-color: whitesmoke;
+  padding: 30px 50px;
+  background-color: rgba(103, 70, 70, 0.75);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:brown;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: none;
+}

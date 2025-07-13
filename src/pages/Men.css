@@ -1,0 +1,89 @@
+:root {
+  --nav-height: 90px;
+}
+
+/* Full page container */
+.page-container {
+  min-height: 100vh;
+  padding-top: var(--nav-height);
+  padding-bottom: 40px;
+  background-color: #fefefe;
+
+  /* ✨ Center vertically & horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Inner container for product layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Product Card */
+.card {
+  width: 220px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Product Image */
+.card-img-top {
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Card content */
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Product title */
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Price */
+.card-text {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Add to Cart button */
+.btn-primary {
+  background-color: #6c63ff;
+  border: none;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #554cd1;
+}
+.body{
+  background-color: aquamarine;
+}

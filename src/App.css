@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+  background-image: url("C:/Users/varsi/handloomsite/handloomsite/src/images/handloom.jpeg");
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+* {
+  font-family: 'Roboto', sans-serif;
+}

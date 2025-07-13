@@ -1,0 +1,69 @@
+/* About.css */
+
+:root {
+  --nav-height: 90px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+}
+
+.container {
+  padding-top: var(--nav-height);
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: black;
+  border-bottom: 3px solid burlywood;
+  display: inline-block;
+}
+
+/* Paragraph Text */
+.container p,
+.container ul {
+  max-width: 800px;
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* Headings inside the container */
+.container h3 {
+  font-size: 1.8rem;
+  color: black;
+  margin-top: 40px;
+}
+
+/* List items */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  text-align: left;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 10px;
+}
+
+ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  color: red;
+}

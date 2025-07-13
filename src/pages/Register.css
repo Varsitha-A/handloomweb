@@ -1,0 +1,100 @@
+:root {
+  --nav-height: 90px;
+}
+
+/* Full page center alignment with background */
+.register-container {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--nav-height);
+  padding-bottom: 40px;
+  background-color: blue; /* 💙 Light soft blue background */
+  background-image: linear-gradient(to right, #f0f4ff, #e3f2fd); /* gradient */
+}
+
+/* Register heading */
+.register-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* The form box */
+form {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input groups */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label */
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+
+/* Input fields */
+.form-group input {
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid white;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #6c63ff;
+}
+
+/* Register Button */
+.register-btn {
+  background-color: #6c63ff;
+  color: white;
+  font-size: 1rem;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #554cd1;
+}
+
+/* Redirect to login */
+.login-redirect {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  color: #333;
+  text-align: center;
+}
+
+.login-redirect span {
+  color: #6c63ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-redirect span:hover {
+  color: #554cd1;
+}
+.body{
+  background-color: aquamarine;
+}
